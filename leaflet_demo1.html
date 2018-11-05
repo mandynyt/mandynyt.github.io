@@ -14,5 +14,24 @@
 </head>
 <body>
 
+    <div id="mapid"></div>
+
+
+ <script>
+ var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+
+
+   var map = L.map('map')
+            .addLayer(mapboxTiles)
+            .setView([51.507222, -0.1275], 13);
+
+   var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+
+   </script>
+
+
 </body>
 </html>
