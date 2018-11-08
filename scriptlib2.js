@@ -25,7 +25,7 @@ $(document).ready(function(){
           console.log(result)
                $.each(result.records, function(key,value) {
                    items = [];
-                       items.push(value.fields.Name);
+                       items.push(value.fields.Date_of_purchase);
                        items.push(value.fields.Stage_Desc);
                        items.push(value.fields.Completed);
                        items.push(value.fields.Time_Estimate);
@@ -67,12 +67,15 @@ $(document).ready(function(){
          console.log(result)
               $.each(result.records, function(key,value) {
                   table1_items = [];
+                      table1_items.push(value.fields.Product_name);
+                      table1_items.push(value.fields.Date_of_purchase);
+                      table1_items.push(value.fields.Photo);
+                      table1_items.push(value.fields.Brand);
+                      table1_items.push(value.fields.Product_category);
+                      table1_items.push(value.fields.color);
+                      table1_items.push(value.fields.Selling_price_HKD);
                       table1_items.push(value.fields.Source);
-                      table1_items.push(value.fields["Product Name"]);
-                      table1_items.push(value.fields.Completed);
-                      table1_items.push(value.fields.Time_Estimate);
-                      table1_items.push(value.fields.Weight_Factor);
-                      table1_items.push(value.fields.converted);
+                      table1_items.push(value.fields.Repurchase);
                       table1_dataSet.push(table1_items);
                       console.log(table1_items);
                }); // end .each
@@ -82,18 +85,25 @@ $(document).ready(function(){
                 data: table1_dataSet,
                 retrieve: true,
                 columns: [
-                    { title: "Source",
+                    { title: "Product name",
                       defaultContent:""},
-                    { title: "Stage",
+                    { title: "Date of purchase",
                         defaultContent:"" },
-                    { title: "Completed",
+                    { title: "Photo",
                       defaultContent:"" },
-                    { title: "Time Estimated",
+                    { title: "Brand",
                       defaultContent:""},
-                    { title: "Weight Factor",
+                    { title: "Product Category",
                         defaultContent:""},
-                    { title: "Converted",
+                    { title: "Color",
                       defaultContent:""},
+                    { title: "Selling price",
+                        defaultContent:""},
+                    { title: "Source",
+                        defaultContent:""},
+                    { title: "Repurchase",
+                        defaultContent:""},
+
                 ]
             } );
        }); // end .getJSON
@@ -126,7 +136,7 @@ $(document).ready(function(){
 
                 var chart = c3.generate({
                      data: {
-                         columns: table2_dataSet,
+                         columns: table1_dataSet,
                          type : 'bar'
                      },
                      bar: {
