@@ -64,12 +64,19 @@ $(document).ready(function(){
        var table1_dataSet = [];
        $.getJSON(airtable_read_endpoint, function(result) {
          console.log('result')
-         console.log(result)
+         //console.log(result)
+
+         console.log(JSON.stringify(result))
               $.each(result.records, function(key,value) {
                   table1_items = [];
                       table1_items.push(value.fields.Product_name);
                       table1_items.push(value.fields.Date_of_purchase);
-                      table1_items.push(value.fields.Photo);
+                      if (value.fields.Photo!=undefined) {
+                        table1_items.push("<img src='"+value.fields.Photo[0].url+"' width='24'>");
+                      }
+                      else {
+                        table1_items.push("");
+                      }
                       table1_items.push(value.fields.Brand);
                       table1_items.push(value.fields.Product_category);
                       table1_items.push(value.fields.color);
@@ -77,7 +84,7 @@ $(document).ready(function(){
                       table1_items.push(value.fields.Source);
                       table1_items.push(value.fields.Repurchase);
                       table1_dataSet.push(table1_items);
-                      console.log(table1_items);
+                      //console.log(table1_items);
                }); // end .each
                console.log(table1_dataSet);
 
@@ -111,13 +118,13 @@ $(document).ready(function(){
          var table2_items = [];
          var i = 0;
          var airtable_read_endpoint =
-         "https://api.airtable.com/v0/appM38HXlEVhxmnqx/Stage?api_key=keyTcsTzckqyBTlk8&view=Grid%20view";
+         "https://api.airtable.com/v0/appsgGTkZbQQG52UE/Purchase%20history?api_key=keyDQXt27JtFQ0kXk";
          var table2_dataSet = [];
          $.getJSON(airtable_read_endpoint, function(result) {
                 $.each(result.records, function(key,value) {
                     table2_items = [];
-                        table2_items.push(value.fields.Name);
-                        table2_items.push(value.fields.Total_Entries);
+                        table2_items.push(value.fields.Product_name);
+                        table2_items.push(value.fields.Selling_price_HKD);
                         table2_dataSet.push(table2_items);
                         console.log(table2_items);
                  }); // end .each
@@ -127,9 +134,9 @@ $(document).ready(function(){
                     retrieve: true,
                     ordering: false,
                     columns: [
-                        { title: "Name",
+                        { title: "Product name",
                           defaultContent:""},
-                        { title: "Total Entries",
+                        { title: "Selling price HKD",
                           defaultContent:""},
                     ] // rmf columns
                 } ); // end dataTable
