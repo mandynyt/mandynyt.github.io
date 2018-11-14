@@ -28,9 +28,6 @@
               <li>
                   <a href="locations.html">Locations</a>
               </li>
-              <li class="active">
-                  <a href="links.html">Links</a>
-              </li>
           </ul>
       </div>
   </nav>
@@ -38,10 +35,7 @@
 
 
     <h1>Leaflet Example</h1>
-    <div id="map" style="width: 600px; height: 400px"></div>
-
-
-
+    <div id="map" style="width: 800px; height: 400px"></div>
     <script>
         var mapboxTiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
         var map = L.map('map')
@@ -67,12 +61,13 @@
 
 
 
+
   <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <h1>Check out the loactions of universities in Hong Kong.</h1>
           <div id="map" style="width: 800px; height: 440px; border: 1px solid #AAA;"></div>
-          <button type="button" class="btn btn-warning" id='roll_up' onclick="show_districts();">Show Districts</button><br>
+          <button type="button" class="btn btn-warning" id='roll_up' onclick="show_locations();">Show Locations</button><br>
         </div>
       </div>
     </div>
@@ -99,7 +94,17 @@
         }); // end getJSON
     </script>
 
+    <script>
+    function show_locations(){
 
+      for (var i in data) {
+          var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+          L.marker( latlng )
+              .bindPopup( '<a href="' + data[i].website + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+              .addTo(map);
+      }
+    }
+    </script>
 
 
 
