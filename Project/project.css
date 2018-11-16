@@ -10,9 +10,13 @@ body {
 			background-color: #999;
 }
 
+body#about-html div.container {
+      float: right;
+}
+
 div.container > h1, h1 {
       color: white;
-      margin-left: 15rem;
+      /* margin-left: 15rem; */
       margin-top: 1.5rem;
 }
 
@@ -37,9 +41,6 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     background-color: #235784;
 }
 
-div.container > h1 {
-  margin-left: 450px;
-}
 
 @media only screen and (max-width: 993px) {
   div.container > h1, p {
