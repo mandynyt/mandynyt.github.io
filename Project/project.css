@@ -18,8 +18,8 @@ body#about-html div.container {
 
 
 body#overviews-html div.container {
-      float: right;
-      padding-left: 50px;
+      float: left;
+      padding-right: 50px;
       max-width: 70%;
 }
 
