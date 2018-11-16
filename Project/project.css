@@ -53,11 +53,6 @@ body#locations-html .btn-warning {
     border-color: none;
 }
 
-body#roll_up btn-warning {
-    color: white;
-    background-color: #235784;
-    border-color: none;
-}
 
 div.container > h1, h1 {
       color: white;
