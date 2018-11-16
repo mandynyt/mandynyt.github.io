@@ -35,6 +35,11 @@ body#overviews-html .form-control {
     width: 80%;
 }
 
+body#overviews-html .btn-warning {
+    color: #235784;
+    background-color: #f7aa00;
+    border-color: none;
+}
 
 body#locations-html div.container {
       float: right;
