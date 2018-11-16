@@ -67,13 +67,13 @@
               .setView([22.287111, 114.191667], 13);
 
         var items = [];
-        var airtable_read_endpoint = "https://api.airtable.com/v0/appM38HXlEVhxmnqx/venues?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
+        var airtable_read_endpoint = "https://api.airtable.com/v0/app8JpknoQTchY1HL/Info?api_key=keyDQXt27JtFQ0kXk";
         var data = [];
         $.getJSON(airtable_read_endpoint, function(result) {
                $.each(result.records, function(key,value) {
                    items = {};
-                       items["name"] = value.fields.Name;
-                       items["url"] = value.fields.url;
+                       items["name"] = value.fields.University;
+                       items["url"] = value.fields.Website;
                        items["image_url"] = value.fields.image_url;
                        items["latitud"] = value.fields.Lat;
                        items["longitud"] = value.fields.Lng;
@@ -82,12 +82,6 @@
                 }); // end .each
         }); // end getJSON
     </script>
-
-
-
-
-
-
 
 
 
