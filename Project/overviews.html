@@ -85,16 +85,11 @@
     <br>
 
   <form>
-  <div class="form-group">
-    <label>Which university you wish to study in?</label>
-    <input type="text" class="form-control" id="university1" placeholder="Please select a university.">
-  </div>
-
 
   <div class="form-group col-md-4">
-  <label for="university2">University Choice</label>
-  <select id="university2" class="form-control">
-    <option selected>Choose...</option>
+  <label for="university">Which university you wish to study in?</label>
+  <select id="university" class="form-control">
+    <option selected>Please select.</option>
     <option>City University of Hong Kong</option>
     <option>Hang Seng University of Hong Kong</option>
     <option>Hong Kong Baptist University</option>
@@ -107,12 +102,10 @@
     <option>The University of Hong Kong</option>
   </select>
 
-
   <div class="form-group">
     <label>Which programme you wish to enter?</label>
     <input type="text" class="form-control" id="programme" placeholder="Please enter a programme name.">
   </div>
-
 
   </form>
 
@@ -124,14 +117,13 @@
 
 <script type="text/javascript">
         $('#button').click(function(){
-          var university1 = $('#university1').val()
-          var university2 = $('#university2').val()
+          var university = $('#university').val()
           var programme = $('#programme').val()
-          var message = 'I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!'
+          var message = 'I wish you can enter '+university+' and study '+programme+', good luck!'
 
           $('#message').html(message)
           $('#message').show('slow')
-          // alert('I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!');
+          // alert('I wish you can enter '+university+' and study '+programme+', good luck!');
           return false;
         })
 </script>
