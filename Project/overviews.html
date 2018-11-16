@@ -92,7 +92,7 @@
 
 
   <div class="form-group col-md-4">
-  <label for="inputState">University Choice</label>
+  <label for="university2">University Choice</label>
   <select id="university2" class="form-control">
     <option selected>Choose...</option>
     <option>City University of Hong Kong</option>
@@ -127,7 +127,8 @@
           var university1 = $('#university1').val()
           var university2 = $('#university2').val()
           var programme = $('#programme').val()
-          var message = "I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!"
+          var message = "I wish you can enter + university1 + "and" + university2 + "study" + programme + , Good luck!";
+          
           $('#message').html(message)
           $('#message').show('slow')
           // alert('I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!')
