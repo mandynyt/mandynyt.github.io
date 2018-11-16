@@ -43,10 +43,15 @@ body#overviews-html .btn-warning {
 
 body#locations-html div.container {
       float: right;
-      /* padding-left: 200px; */
+      padding-left: 100px;
       max-width: 70%;
 }
 
+body#locations-html btn-warning {
+    color: white;
+    background-color: #235784;
+    border-color: none;
+}
 
 div.container > h1, h1 {
       color: white;
