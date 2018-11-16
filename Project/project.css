@@ -42,38 +42,3 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     border-color: #ffffff;
     background-color: #235784;
 }
-
-@media only screen and (min-width: 1598px) {
-  div.container {
-    max-width: 1000px;
-  }
-}
-@media only screen and (min-width: 1330px) {
-  div.container {
-    max-width: 860px;
-  }
-}
-
-@media only screen and (min-width: 1146px) {
-  div.container {
-    max-width: 720px;
-  }
-}
-
-@media only screen and (min-width: 964px) {
-  div.container {
-    max-width: 600px;
-  }
-}
-
-@media only screen and (min-width: 788px) {
-  div.container {
-    max-width: 470px;
-  }
-}
-
-@media only screen and (min-width: 534px) {
-  div.container {
-    max-width: 400px;
-  }
-}
