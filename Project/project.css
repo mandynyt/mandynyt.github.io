@@ -24,3 +24,11 @@ body > h1, h1 {
 nav.navbar-light ul.navbar-nav a.nav-link {
     color: #235784;
 }
+
+
+.btn-outline-success {
+    color: #f7aa00;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f7aa00;
+}
