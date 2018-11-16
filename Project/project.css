@@ -10,7 +10,7 @@ body {
 			background-color: #999;
 }
 
-body > h1, h1 {
+div.container > h1, h1 {
       color: white;
       margin-left: 15rem;
       margin-top: 1.5rem;
@@ -36,3 +36,5 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     border-color: #ffffff;
     background-color: #235784;
 }
+
+@media only screen and ()
