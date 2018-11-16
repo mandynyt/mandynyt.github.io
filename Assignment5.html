@@ -12,7 +12,7 @@
         gtag('config', 'UA-71445513-6');
       </script>
 
-  <title>Musings Page</title>
+  <title>Assignment 5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,33 +26,35 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home page</a>
-          <li class="active"><a href="musings.html">Musings</a>
-          <li><a href="town.html">My town</a>
-          <li><a href="links.html">Links</a>
-        </ul>
-      </div>
-    </nav>
+
+
+
   <div class="container">
+    <form>
+  <div class="form-group">
+    <label >What is your name?</label>
+    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name.">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label >What is your birthday year??</label>
+    <input type="text" class="form-control" id="birthyear" placeholder="Please enter a number with four digits.">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1"> I want to receive birthday wishes!!</label>
+  </div>
+  </form>
+  <button  class="btn btn-warning btn-lg" id="button">Submit</button>
+
+  <div style="display: none; margin-top:10px;" class="alert alert-warning" role="alert" id="message">
+
+  </div>
     <div class="row">
       <div class="col-sm-12">
-        <h1>Musing Page</h1>
 
-        <p>Welcome to my musing page!
 
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Airtable API Demo</h5>
-              <p id="welcome" class="card-text">Using jQuery onclick and Airtable API for fun!</p>
-            </div>
-          </div>
-          <div class="well"><p id="demo">Airtable is a wonderful spreadsheet-like database with many useful features for data modeling and basic analytics. When used with other data visualization libraries, it can be a great tool for rapid prototyping</div>
+
 
           <!-- Sign and date the page, it's only polite! -->
           <button type="button" class="btn btn-warning" id='roll_up'>Roll Up</button><br>
