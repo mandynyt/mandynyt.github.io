@@ -86,23 +86,36 @@
 
   <form>
   <div class="form-group">
-    <label >Which university you wish to study in?</label>
-    <input type="text" class="form-control" id="university" aria-describedby="emailHelp" placeholder="Please select a university.">
+    <label>Which university you wish to study in?</label>
+    <input type="text" class="form-control" id="university1" placeholder="Please select a university.">
   </div>
+
+
+  <div class="form-group col-md-4">
+  <label for="inputState">University Choice</label>
+  <select id="university2" class="form-control">
+    <option selected>Choose...</option>
+    <option>City University of Hong Kong</option>
+    <option>Hang Seng University of Hong Kong</option>
+    <option>Hong Kong Baptist University</option>
+    <option>Hong Kong Shue Yan University</option>
+    <option>Lingnan University</option>
+    <option>The Chinese University of Hong Kong</option>
+    <option>The Education University of Hong Kong</option>
+    <option>The Hong Kong Polytechnic University</option>
+    <option>The Hong Kong University of Science and Technology</option>
+    <option>The University of Hong Kong</option>
+  </select>
+
 
   <div class="form-group">
     <label>Which programme you wish to enter?</label>
     <input type="text" class="form-control" id="programme" placeholder="Please enter a programme name.">
   </div>
 
-  <div class="form-group col-md-4">
-  <label for="inputState">State</label>
-  <select id="inputState" class="form-control">
-    <option selected>Choose...</option>
-    <option>...</option>
-  </select>
 
   </form>
+
 
   <button class="btn btn-warning btn-lg" id="button">Submit</button>
   <div style="display: none; margin-top:10px;" class="alert alert-warning" role="alert" id="message">
@@ -111,9 +124,10 @@
 
 <script type="text/javascript">
         $('#button').click(function(){
-          var university = $('#university').val()
+          var university1 = $('#university1').val()
+          var university2 = $('#university2').val()
           var programme = $('#programme').val()
-          var message = 'I wish you can enter '+university+' and study '+programme+'. Good luck!'
+          var message = 'I wish you can enter '+university1+' and '+university1+' study '+programme+'. Good luck!'
           $('#message').html(message)
           $('#message').show('slow')
           // alert('I wish you can enter '+university+' and study '+programme+'. Good luck!')
