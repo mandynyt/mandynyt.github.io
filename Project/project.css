@@ -13,7 +13,7 @@ body {
 body#about-html div.container {
       float: right;
       padding-left: 50px;
-      max-width: 1200px;
+      max-width: 70%;
 }
 
 div.container > h1, h1 {
