@@ -86,13 +86,13 @@
 
   <form>
   <div class="form-group">
-    <label >What is your name?</label>
-    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name.">
+    <label >Which university you wish to study in?</label>
+    <input type="text" class="form-control" id="university" aria-describedby="emailHelp" placeholder="Please select a university.">
   </div>
 
   <div class="form-group">
-    <label>What is your birthday year??</label>
-    <input type="text" class="form-control" id="birthyear" placeholder="Please enter a number with four digits.">
+    <label>Which programme you wish to enter?</label>
+    <input type="text" class="form-control" id="programme" placeholder="Please enter a programme name.">
   </div>
 
   <div class="form-group col-md-4">
@@ -111,13 +111,12 @@
 
 <script type="text/javascript">
         $('#button').click(function(){
-          var name = $('#name').val()
-          var birthyear = $('#birthyear').val()
-          var age = 2018 - birthyear
-          var message = 'Magic~~~'+name+', I know you are '+age+' years old!'
+          var university = $('#university').val()
+          var programme = $('#programme').val()
+          var message = 'I wish you can enter '+university+' and study '+programme+'. Good luck!'
           $('#message').html(message)
           $('#message').show('slow')
-          // alert('Magic~~~'+name+', I know you are '+age+' years old!')
+          // alert('I wish you can enter '+university+' and study '+programme+'. Good luck!')
         })
 </script>
 
