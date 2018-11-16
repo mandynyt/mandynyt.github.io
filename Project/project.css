@@ -37,4 +37,6 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     background-color: #235784;
 }
 
-@media only screen and ()
+@media only screen and (min-width: 993px) {
+  margin-left: 700px;
+}
