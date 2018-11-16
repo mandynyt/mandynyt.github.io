@@ -47,7 +47,7 @@ body#locations-html div.container {
       max-width: 70%;
 }
 
-body#locations-html btn-warning {
+body#locations-html .btn-warning {
     color: white;
     background-color: #235784;
     border-color: none;
