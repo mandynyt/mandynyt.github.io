@@ -24,6 +24,11 @@ body#overviews-html div.container {
       margin-left: 90px;
 }
 
+body#overviews-html .form-control {
+    width: 80%;
+}
+
+
 body#locations-html div.container {
       float: right;
       padding-left: 390px;
