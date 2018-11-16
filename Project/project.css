@@ -38,5 +38,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 }
 
 @media only screen and (min-width: 993px) {
-  margin-left: 700px;
+  div.container > h1 {
+    margin-left: 700px;
+  }
 }
