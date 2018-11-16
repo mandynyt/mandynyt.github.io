@@ -21,11 +21,12 @@ body#overviews-html div.container {
       float: left;
       padding-right: 50px;
       max-width: 70%;
+      margin-left: 90px;
 }
 
 body#locations-html div.container {
       float: right;
-      padding-left: 50px;
+      padding-left: 390px;
       max-width: 70%;
 }
 
