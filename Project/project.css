@@ -34,4 +34,5 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 #navbarSupportedContent > form > button:hover {
     color: #ffffff;
     border-color: #ffffff;
+    background-color: #235784;
 }
