@@ -13,6 +13,7 @@ body {
 body#about-html div.container {
       float: right;
       padding-left: 50px;
+      max-width: 1200px;
 }
 
 div.container > h1, h1 {
@@ -42,31 +43,37 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     background-color: #235784;
 }
 
-@media only screen and (min-width: 1532px) {
-  div.container {
-    max-width: 1300px;
-  }
-}
-
-@media only screen and (min-width: 1532px) {
+@media only screen and (min-width: 1598px) {
   div.container {
     max-width: 1000px;
   }
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1330px) {
   div.container {
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1146px) {
   div.container {
     max-width: 720px;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 964px) {
   div.container {
-    max-width: 540px;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 788px) {
+  div.container {
+    max-width: 470px;
+  }
+}
+
+@media only screen and (min-width: 534px) {
+  div.container {
+    max-width: 400px;
   }
 }
