@@ -16,6 +16,20 @@ body#about-html div.container {
       max-width: 70%;
 }
 
+
+body#overviews-html div.container {
+      float: right;
+      padding-left: 50px;
+      max-width: 70%;
+}
+
+body#locations-html div.container {
+      float: right;
+      padding-left: 50px;
+      max-width: 70%;
+}
+
+
 div.container > h1, h1 {
       color: white;
       /* margin-left: 15rem; */
