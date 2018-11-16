@@ -27,6 +27,11 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 
 
 #navbarSupportedContent > form > button{
-    color: #f7aa00;
-    border-color: #f7aa00;
+    color: #235784;
+    border-color: #235784;
+}
+
+#navbarSupportedContent > form > button:hover {
+    color: #ffffff;
+    border-color: #ffffff;
 }
