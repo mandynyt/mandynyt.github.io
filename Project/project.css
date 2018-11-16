@@ -9,3 +9,14 @@ body {
 			background-size:  cover;
 			background-color: #999;
 }
+
+.h1, h1 {
+      color: white;
+      margin-left: 15rem;
+      margin-top: 1.5rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    font-size: x-large;
+    margin-top: 1.5rem;
+}
