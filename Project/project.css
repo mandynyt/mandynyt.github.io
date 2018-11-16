@@ -26,9 +26,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 }
 
 
-.btn-outline-success {
+#navbarSupportedContent > form > button{
     color: #f7aa00;
-    background-color: transparent;
-    background-image: none;
     border-color: #f7aa00;
 }
