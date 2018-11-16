@@ -118,7 +118,7 @@
 
 
   <button class="btn btn-warning btn-lg" id="button">Submit</button>
-  <div style="margin-top:10px;" class="alert alert-warning" role="alert" id="message">
+  <div style="display: none; margin-top:10px;" class="alert alert-warning" role="alert" id="message">
 
 
 
@@ -127,10 +127,10 @@
           var university1 = $('#university1').val()
           var university2 = $('#university2').val()
           var programme = $('#programme').val()
-          var message = "I wish you can enter '+university1+' and '+university2+' study '+programme+'. Good luck!"
+          var message = "I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!"
           $('#message').html(message)
           $('#message').show('slow')
-          // alert('I wish you can enter '+university1+' and '+university2+' study '+programme+'. Good luck!')
+          // alert('I wish you can enter '+university1+' and '+university2+' study '+programme+', Good luck!')
         })
 </script>
 
