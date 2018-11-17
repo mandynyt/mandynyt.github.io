@@ -41,6 +41,11 @@ body#overviews-html .btn-warning {
     border-color: none;
 }
 
+@media (min-width: 768px) .col-md-4 {
+    max-width: 80%;
+}
+
+
 body#locations-html div.container {
       float: right;
       padding-left: 100px;
