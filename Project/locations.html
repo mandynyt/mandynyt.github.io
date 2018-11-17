@@ -99,39 +99,40 @@
 
 <script>
 
-      var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
 
-      var map = L.map('map')
-            .addLayer(mapboxTiles)
-            .setView([22.287111, 114.191667], 13);
+var map = L.map('map')
+      .addLayer(mapboxTiles)
+      .setView([22.287111, 114.191667], 13);
 
-      var items = [];
-      var airtable_read_endpoint = "https://api.airtable.com/v0/app8JpknoQTchY1HL/Info?api_key=keyDQXt27JtFQ0kXk&sortField=_createdTime&sortDirection=desc";
-      var data = [];
-      $.getJSON(airtable_read_endpoint, function(result) {
-             $.each(result.records, function(key,value) {
-                 items = {};
-                     items["name"] = value.fields.University;
-                     items["image"] = value.fields.Photo;
-                     items["url"] = value.fields.Website;
-                     items["latitud"] = value.fields.Lat;
-                     items["longitud"] = value.fields.Lng;
-                     data.push(items);
-                     console.log(items);
-              }); // end .each
-      }); // end getJSON
+var items = [];
+var airtable_read_endpoint = "https://api.airtable.com/v0/app8JpknoQTchY1HL/Info?api_key=keyDQXt27JtFQ0kXk";
+var data = [];
+$.getJSON(airtable_read_endpoint, function(result) {
+       $.each(result.records, function(key,value) {
+                items = {};
+                items["name"] = value.fields.University;
+                items["url"] = value.fields.Website;
+                items["image_url"] = value.fields.Photo;
+                items["latitud"] = value.fields.Lat;
+                items["longitud"] = value.fields.Lng;
+               data.push(items);
+               console.log(items);
+        }); // end .each
+}); // end getJSON
+
   </script>
 
   <script>
-    function show_districts(){
+  function show_districts(){
 
-      for (var i in data) {
-          var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
-          L.marker( latlng )
-              .bindPopup( '<a href="' + data[i].Website + '" target="_blank">' + '<img src="' + data[i].Photo+'" width = "80px"><br>'+data[i].University + '</a>' )
-              .addTo(map);
-      }
-    }
+  for (var i in data) {
+    var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+    L.marker( latlng )
+        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+        .addTo(map);
+  }
+  }
     </script>
 
 
