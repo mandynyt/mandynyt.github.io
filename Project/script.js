@@ -1,5 +1,5 @@
 
-$("button#roll_up").click(function() {
+$("button#unidata").click(function() {
   var table1_items = [];
   var i = 0;
   var airtable_read_endpoint = "https://api.airtable.com/v0/appsgGTkZbQQG52UE/Purchase%20history?api_key=keyDQXt27JtFQ0kXk";
