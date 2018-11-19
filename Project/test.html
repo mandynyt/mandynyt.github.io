@@ -80,26 +80,16 @@
 
 
 
-  <p>Welcome to my musing page!
 
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Airtable API Demo</h5>
-              <p id="welcome" class="card-text">Using jQuery onclick and Airtable API for fun!</p>
-            </div>
-          </div>
-          <div class="well"><p id="demo">Airtable is a wonderful spreadsheet-like database with many useful features for data modeling and basic analytics. When used with other data visualization libraries, it can be a great tool for rapid prototyping</div>
+      <!-- Sign and date the page, it's only polite! -->
+      <div class="table-responsive">
+      <center><button type="button" class="btn btn-warning" id='get_age'>Get Average Age</button></center>
+      <table id="table3" width="100%" class="table table-bordered"></table>
+      <table id="table4" width="100%" class="table table-bordered"></table>
+      <div id="chart"></div>
 
-          <!-- Sign and date the page, it's only polite! -->
-          <button type="button" class="btn btn-warning" id='roll_up'>Roll Up</button><br>
-          <div class="table-responsive">
-          <table id="table1" width="100%" class="table table-bordered"></table>
-          <table id="table2" width="100%" class="table table-bordered"></table>
-          <div id="chart"></div>
-        </div>
-      </div>
-  </div>
-  <script src='scriptlib2.js'></script>
+      <script src='data.js'></script>
+      <script src='age_data.js'></script>
 
 
 
