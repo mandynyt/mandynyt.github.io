@@ -41,6 +41,10 @@ body#overviews-html .btn-warning {
     border-color: none;
 }
 
+body#overviews-html .table-responsive {
+    overflow-x: none;
+}
+
 @media (min-width: 768px) .col-md-4 {
     max-width: 80%;
 }
