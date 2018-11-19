@@ -57,7 +57,7 @@ $("button#unidata").click(function() {
             console.log(table2_dataSet);
 
 
-           /*var chart = c3.generate({
+           var chart = c3.generate({
                 data: {
                     columns: table2_dataSet,
                     type : 'bar'
@@ -70,8 +70,8 @@ $("button#unidata").click(function() {
                         label: 'Selling price'
                     },
                 }
-            });*/
+            });
 
      }); // end .getJSON
   }); // end button
-}); // document ready
+//}); // document ready
