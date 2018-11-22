@@ -116,11 +116,12 @@ var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
 
 var map = L.map('map')
       .addLayer(mapboxTiles)
-      .setView([22.310550, 114.172855], 13);
+      .setView([22.310550, 114.172855], 12);
 
+// create custom icon
 var firefoxIcon = L.icon({
-    iconUrl: 'http://joshuafrazier.info/images/firefox.svg',
-    iconSize: [38, 95], // size of the icon
+    iconUrl: 'mapicon.png',
+    iconSize: [70, 60], // size of the icon
     popupAnchor: [0,-15]
     });
 
