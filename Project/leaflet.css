@@ -2,9 +2,8 @@
 
 .leaflet-map-pane,
 .leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow,
-.leaflet-tile-pane,
+/*.leaflet-marker-icon,*/
+/*.leaflet-tile-pane,*/
 .leaflet-tile-container,
 .leaflet-overlay-pane,
 .leaflet-shadow-pane,
@@ -24,17 +23,17 @@
 	touch-action: none;
 	}
 .leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
+/*.leaflet-marker-icon,*/
+/*.leaflet-marker-shadow {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	        user-select: none;
 	-webkit-user-drag: none;
-	}
-.leaflet-marker-icon,
+	}*/
+/*.leaflet-marker-icon,
 .leaflet-marker-shadow {
 	display: block;
-	}
+	}*/
 /* map is broken in FF if you have max-width: 100% on tiles */
 .leaflet-container img {
 	max-width: none !important;
