@@ -118,6 +118,12 @@ var map = L.map('map')
       .addLayer(mapboxTiles)
       .setView([22.287111, 114.191667], 16);
 
+var firefoxIcon = L.icon({
+    iconUrl: 'http://joshuafrazier.info/images/firefox.svg',
+    iconSize: [38, 95], // size of the icon
+    popupAnchor: [0,-15]
+    });
+
 var items = [];
 var airtable_read_endpoint = "https://api.airtable.com/v0/app8JpknoQTchY1HL/Info?api_key=keyDQXt27JtFQ0kXk";
 var data = [];
