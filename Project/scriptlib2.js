@@ -68,7 +68,7 @@ $(document).ready(function() {
         table1_items.push(value.fields.Chinese_name);
         if (value.fields.Photo != undefined) {
           table1_items.push(
-            "<img src='" + value.fields.Photo[0].url + "' width='24'>"
+            "<img src='" + value.fields.Photo[0].url + "' width='100'>"
           );
         } else {
           table1_items.push("");

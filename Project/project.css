@@ -41,6 +41,10 @@ body#overviews-html .btn-warning {
     border-color: none;
 }
 
+table#table2 .element.style {
+    width: 800px;
+}
+
 body#overviews-html .table-responsive {
     overflow-x: none;
 }

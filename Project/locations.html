@@ -104,7 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-xs-12 col-sm-12 col-md-12">
     <div id="map" style="width: 800px; height: 440px; border: 1px solid #AAA;"></div>
     <br>
-    <center><button style="color:white;background-color: #235784;" type="button" class="btn btn-warning" id='roll_up' onclick="show_districts();">Show Districts</button><center><br>
+   <button style="color:white;background-color: #235784;" type="button" class="btn btn-warning" id='roll_up' onclick="show_districts();">Show Locations</button>
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@ var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.pn
 
 var map = L.map('map')
       .addLayer(mapboxTiles)
-      .setView([22.287111, 114.191667], 13);
+      .setView([22.287111, 114.191667], 16);
 
 var items = [];
 var airtable_read_endpoint = "https://api.airtable.com/v0/app8JpknoQTchY1HL/Info?api_key=keyDQXt27JtFQ0kXk";
