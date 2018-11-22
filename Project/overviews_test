@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNF34RJ');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71445513-6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-71445513-6');
+      </script>
+
+  <title>Overviews</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.css" rel="stylesheet" type="text/css">
+
+  <style>
+  body {
+       background-image: url('bg2.jpg');
+       background-position: center center;
+       background-repeat:  no-repeat;
+       background-attachment: fixed;
+       background-size:  cover;
+       width: 100%;
+       height: 400px;
+  }
+  </style>
+</head>
+
+<body id="overviews-html">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNF34RJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bcdbdf;">
+    <a class="navbar-brand" href="https://mandynyt.github.io/Project/home.html">
+    <img src="UinHKlogo.png" alt="UinHKlogo" style="width:200px;height:81px;border:0;">
+    </a>    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://mandynyt.github.io/Project/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mandynyt.github.io/Project/universities.html">Universities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mandynyt.github.io/Project/overviews.html">Overviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mandynyt.github.io/Project/locations.html">Locations</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h1>Overviews</h1>
+    <br>
+
+  <form>
+
+  <div class="form-group col-md-4">
+  <label for="university">Which university you wish to study in?</label>
+  <select id="university" class="form-control">
+    <option selected>Please select.</option>
+    <option>City University of Hong Kong</option>
+    <option>Hang Seng University of Hong Kong</option>
+    <option>Hong Kong Baptist University</option>
+    <option>Hong Kong Shue Yan University</option>
+    <option>Lingnan University</option>
+    <option>The Chinese University of Hong Kong</option>
+    <option>The Education University of Hong Kong</option>
+    <option>The Hong Kong Polytechnic University</option>
+    <option>The Hong Kong University of Science and Technology</option>
+    <option>The University of Hong Kong</option>
+  </select>
+
+  <div class="form-group">
+    <label>Which programme you wish to enter?</label>
+    <input type="text" class="form-control" id="programme" placeholder="Please enter a programme name.">
+  </div>
+
+  </form>
+
+
+  <button class="btn btn-warning btn-lg" id="choice">My choice</button>
+  <div style="margin-top:10px;" class="alert alert-warning" role="alert" id="message">
+
+
+
+<script type="text/javascript">
+        $('#choice').click(function(){
+          var university = $('#university').val()
+          var programme = $('#programme').val()
+          var message = 'I wish you can enter '+university+' and study '+programme+', good luck!'
+
+          $('#message').html(message)
+          $('#message').show('slow')
+          // alert('I wish you can enter '+university+' and study '+programme+', good luck!');
+          return false;
+        })
+</script>
+
+<br>
+<!-- Sign and date the page, it's only polite! -->
+</div>
+<button type="button" class="btn btn-warning" id='roll_up'>Check out Universities information</button><br>
+
+<div >
+  <table id="table1" width="100%" class="table table-bordered"></table>
+  <table id="table2" width="100%" class="table table-bordered"></table>
+  <div id="chart"></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src='scriptlib2.js'></script>
+
+
+
+</body>
+</html>
+</html>
