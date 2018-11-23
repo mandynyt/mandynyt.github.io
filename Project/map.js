@@ -20,12 +20,17 @@ $.getJSON(airtable_read_endpoint, function(result) {
         }); // end .each
 }); // end getJSON
 
-function show_districts(){
 
-for (var i in data) {
-  var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
-  L.marker( latlng )
-      .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
-      .addTo(map);
-}
-}
+  function show_districts(){
+console.log('show show_districts')
+  for (var i in data) {
+    console.log('data is ...')
+    console.log(data[i])
+    // console.log(data[i].image_url[0].url)
+
+    var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+    L.marker( latlng , {icon: firefoxIcon} )
+        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url[0].url+'" width = "150px"><br>'+data[i].name + '</a>' )
+        .addTo(map);
+  }
+  }
