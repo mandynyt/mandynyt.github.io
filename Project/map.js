@@ -28,3 +28,4 @@ for (var i in data) {
       .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
       .addTo(map);
 }
+}
