@@ -132,7 +132,7 @@ $.getJSON(airtable_read_endpoint, function(result) {
        $.each(result.records, function(key,value) {
                 items = {};
                 items["name"] = value.fields.University;
-                items["image_url"] = value.fields.Photo;
+                items["image"] = value.fields.Photo;
                 items["url"] = value.fields.Website;
                 items["latitud"] = value.fields.Lat;
                 items["longitud"] = value.fields.Lng;
@@ -149,7 +149,7 @@ $.getJSON(airtable_read_endpoint, function(result) {
   for (var i in data) {
     var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
     L.marker( latlng , {icon: firefoxIcon} )
-        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "150px"><br>'+data[i].name + '</a>' )
+        .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image+'" width = "150px"><br>'+data[i].name + '</a>' )
         .addTo(map);
   }
   }
