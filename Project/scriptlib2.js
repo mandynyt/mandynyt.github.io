@@ -126,6 +126,7 @@ $(document).ready(function() {
       }); // end dataTable
 
       var chart = c3.generate({
+        size: { width: 1000px },
         data: {
           columns: table2_dataSet,
           type: "bar"
@@ -135,9 +136,10 @@ $(document).ready(function() {
           y: { label: "Number of students" }
         },
         bar: {
-          title: "Number of students in different Universities"
+          title: {"Number of students in different Universities"},
+          width: { ratio: 0.1 }// this makes bar width 50% of length between ticks
         }
-      });
+      }); // end chart
     }); // end .getJSON
   }); // end button
 

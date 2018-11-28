@@ -104,6 +104,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <br>
     <h1 class="ml3">It's time to</h1>
     <h1 class="ml3">&nbsp &nbsp kick-start your University Life.</h1>
+    <br>
+    <a class="btn btn-warning btn-lg" href="https://mandynyt.github.io/Project/about.html" role="button">Enter the website</a>
   </div>
 
 
@@ -117,7 +119,7 @@ $('.ml3').each(function(){
 $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
 .add({
   targets: '.ml3 .letter',
   opacity: [0,1],
@@ -127,19 +129,13 @@ anime.timeline({loop: true})
     return 150 * (i+1)
   }
 }).add({
-  targets: '.ml3',
+  targets: '',
   opacity: 0,
   duration: 1000,
   easing: "easeOutExpo",
   delay: 1000
 });
 </script>
-
-
-<a class="btn btn-primary" href="https://mandynyt.github.io/Project/about.html" role="button">Enter the website</a>
-
-
-
 
 
 </body>
