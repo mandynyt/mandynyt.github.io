@@ -41,7 +41,7 @@ body#overviews-html .btn-warning {
     border-color: none;
 }
 
-body#overviews-html .form-group.col-md-4 {
+body#overviews-html .form-group.col-md-4.chartClass {
   max-width: none;
 }
 
