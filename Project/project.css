@@ -44,7 +44,7 @@ body#overviews-html .btn-warning {
     font-size: 1rem;
 }
 
-body#overviews-html .alert-warning {
+.alert-warning {
     color: #000000;
     background-color: #bcdbdf;
     border-color: #bcdbdf;
