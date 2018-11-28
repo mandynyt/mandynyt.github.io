@@ -136,7 +136,7 @@ $(document).ready(function() {
           y: { label: "Number of students" }
         },
         bar: {
-          title: {"Number of students in different Universities"},
+          title: "Number of students in different Universities",
           width: { ratio: 0.1 }// this makes bar width 50% of length between ticks
         }
       }); // end chart
