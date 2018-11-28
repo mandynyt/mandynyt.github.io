@@ -45,7 +45,9 @@ body#overviews-html .form-group.col-md-4.chartClass {
   max-width: none;
 }
 
-
+table#table2 .element.style {
+    width: 800px;
+}
 
 body#overviews-html .table-responsive {
     overflow-x: none;
