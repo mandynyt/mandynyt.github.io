@@ -91,3 +91,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
   font-weight: 700;
   font-size: 3.5em;
 }
+
+.chart {
+  width: 100%;
+}
