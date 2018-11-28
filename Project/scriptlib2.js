@@ -126,6 +126,9 @@ $(document).ready(function() {
       }); // end dataTable
 
       var chart = c3.generate({
+        size: {
+          width: 1000
+        },
         data: {
           columns: table2_dataSet,
           type: "bar"
