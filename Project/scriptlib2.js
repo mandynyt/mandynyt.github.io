@@ -126,6 +126,9 @@ $(document).ready(function() {
       }); // end dataTable
 
       var chart = c3.generate({
+        title: {
+          text: 'Number of students in different Universities'
+        },
         size: {
           width: 1000
         },
@@ -134,12 +137,17 @@ $(document).ready(function() {
           type: "bar"
         },
         axis: {
-          x: { label: "University" },
-          y: { label: "Number of students" }
+          x: {
+            label: "University"
+          },
+          y: {
+            label: "Number of students"
+          }
         },
         bar: {
-          title: { text: 'Number of students in different Universities' },
-          width: { ratio: 0.5 }// this makes bar width 50% of length between ticks
+          width: {
+            ratio: 0.5
+          }// this makes bar width 50% of length between ticks
         }
       }); // end chart
     }); // end .getJSON
