@@ -40,6 +40,7 @@ body#overviews-html .btn-warning {
     color: #000000;
     background-color: #f7aa00;
     border-color: none;
+    line-height: 1;
 }
 
 body#overviews-html .form-group.col-md-4.chartClass {
