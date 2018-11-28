@@ -32,9 +32,9 @@ body#overviews-html div.container {
       margin-left: 90px;
 }
 
-body#overviews-html .form-control {
+/* body#overviews-html .form-control {
     width: 180%;
-}
+} */
 
 body#overviews-html .btn-warning {
     color: #000000;
