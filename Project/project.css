@@ -43,6 +43,10 @@ body#overviews-html .btn-warning {
     line-height: 1;
 }
 
+body#overviews-html .label {
+    color: white;
+}
+
 body#overviews-html .form-group.col-md-4.chartClass {
   max-width: none;
 }
