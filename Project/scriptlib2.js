@@ -139,7 +139,7 @@ $(document).ready(function() {
         },
         bar: {
           title: "Number of students in different Universities",
-          width: { ratio: 1.0 }// this makes bar width 50% of length between ticks
+          width: { ratio: 0.5 }// this makes bar width 50% of length between ticks
         }
       }); // end chart
     }); // end .getJSON
