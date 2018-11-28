@@ -50,15 +50,19 @@ body#overviews-html .alert-warning {
     border-color: #bcdbdf;
 }
 
-/*body#overviews-html .label {
-    color: white;s
-}*/
+body#overviews-html .element.label {
+    color: white;
+}
+
+#overviews-html > form > div.form-group.col-md-4.cancel-style {
+    padding-left: none;
+}
 
 body#overviews-html .form-group.col-md-4.chartClass {
   max-width: none;
 }
 
-body#overviews-html .form-group.col-md-4 {
+body#overviews-html div.form-group.col-md-4 {
     padding-left: none;
 }
 
