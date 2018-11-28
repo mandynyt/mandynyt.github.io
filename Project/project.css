@@ -41,10 +41,17 @@ body#overviews-html .btn-warning {
     background-color: #f7aa00;
     border-color: none;
     line-height: 1;
+    font-size: 1rem;
+}
+
+body#overviews-html .alert-warning {
+    color: #000000;
+    background-color: #bcdbdf;
+    border-color: #bcdbdf;
 }
 
 /*body#overviews-html .label {
-    color: white;
+    color: white;s
 }*/
 
 body#overviews-html .form-group.col-md-4.chartClass {
@@ -90,7 +97,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 }
 
 
-#navbarSupportedContent > form > button{
+/*#navbarSupportedContent > form > button{
     color: #235784;
     border-color: #235784;
 }
@@ -99,7 +106,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
     color: #ffffff;
     border-color: #ffffff;
     background-color: #235784;
-}
+}*/
 
 .ml3 {
   font-weight: 700;
