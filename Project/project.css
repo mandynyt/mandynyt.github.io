@@ -43,12 +43,12 @@ body#overviews-html .btn-warning {
     line-height: 1;
 }
 
-alert-warning {
+.alert-warning {
     color: #000000;
     background-color: #bcdbdf;
     border-color: #bcdbdf;
 
-body#overviews-html .label {
+.label {
     color: white;
 }
 
