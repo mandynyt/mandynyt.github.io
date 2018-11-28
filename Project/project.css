@@ -100,3 +100,7 @@ nav.navbar-light ul.navbar-nav a.nav-link {
 #chart {
   width: 100%;
 }
+
+div#chart > svg {
+  background-color: rgba(255, 255, 255, 0.8);
+}
