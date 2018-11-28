@@ -89,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <form>
     <div class="cancel-style">
       <label style="color:white;" for="university">Which university you wish to study in?</label>
-          <select id="university" class="form-control">
+          <select id="university" class="form-control" placeholder="Please enter a programme name.">
             <option selected>Please select.</option>
             <option>City University of Hong Kong</option>
             <option>Hang Seng University of Hong Kong</option>
@@ -117,7 +117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $('#choice').click(function(){
           var university = $('#university').val()
           var programme = $('#programme').val()
-          var message = 'I wish you can enter '+university+' and study '+programme+', good luck!'
+          var message = 'I wish you can enter '+university+' and study '+programme+'. Good luck!'
 
           $('#message').html(message)
           $('#message').show('slow')
