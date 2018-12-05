@@ -78,7 +78,7 @@ $(document).ready(function() {
         table1_items.push(value.fields.President);
         table1_items.push(value.fields.Tel);
         table1_items.push(value.fields.Email);
-        table1_items.push(value.fields.Number_of_students);
+        table1_items.push(value.fields.Number_of_programmes_offered);
         table1_dataSet.push(table1_items);
         //console.log(table1_items);
       }); // end .each
@@ -96,7 +96,7 @@ $(document).ready(function() {
           { title: "President", defaultContent: "" },
           { title: "Tel", defaultContent: "" },
           { title: "Email", defaultContent: "" },
-            { title: "Number of students", defaultContent: "" },
+            { title: "Number of programmes offered", defaultContent: "" },
         ]
       });
     }); // end .getJSON
@@ -110,7 +110,7 @@ $(document).ready(function() {
       $.each(result.records, function(key, value) {
         table2_items = [];
         table2_items.push(value.fields.University);
-        table2_items.push(value.fields.Number_of_students);
+        table2_items.push(value.fields.Number_of_programme_offered);
         table2_dataSet.push(table2_items);
         console.log(table2_items);
       }); // end .each
@@ -121,13 +121,13 @@ $(document).ready(function() {
         ordering: false,
         columns: [
           { title: "University", defaultContent: "" },
-          { title: "Number of students", defaultContent: "" }
+          { title: "Number_of_programme_offered", defaultContent: "" }
         ] // rmf columns
       }); // end dataTable
 
       var chart = c3.generate({
         title: {
-          text: 'Number of students in different Universities'
+          text: 'Number of programme offered in local Universities'
         },
         size: {
           width: 1000
@@ -141,7 +141,7 @@ $(document).ready(function() {
             label: "University"
           },
           y: {
-            label: "Number of students"
+            label: "Number of programmes"
           }
         },
         bar: {
