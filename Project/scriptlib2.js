@@ -121,7 +121,7 @@ $(document).ready(function() {
         ordering: false,
         columns: [
           { title: "University", defaultContent: "" },
-          { title: "Number of programme offered", defaultContent: "" }
+          { title: "Number of programmes offered", defaultContent: "" }
         ] // rmf columns
       }); // end dataTable
 
