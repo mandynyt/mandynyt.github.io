@@ -110,7 +110,7 @@ $(document).ready(function() {
       $.each(result.records, function(key, value) {
         table2_items = [];
         table2_items.push(value.fields.University);
-        table2_items.push(value.fields.Number_of_programme_offered);
+        table2_items.push(value.fields.Number_of_programmes_offered);
         table2_dataSet.push(table2_items);
         console.log(table2_items);
       }); // end .each
@@ -121,7 +121,7 @@ $(document).ready(function() {
         ordering: false,
         columns: [
           { title: "University", defaultContent: "" },
-          { title: "Number_of_programme_offered", defaultContent: "" }
+          { title: "Number of programme offered", defaultContent: "" }
         ] // rmf columns
       }); // end dataTable
 
